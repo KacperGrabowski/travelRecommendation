@@ -1,12 +1,59 @@
-body {
+html, body {
     margin: 0;
     color: white;
+    font-size: 18px;
 }
 .root {
-    background-image: url("images/background-image.jpg");
-    background-repeat: no-repeat;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 56, 58, 0.918), rgba(0, 77, 82, 0) 90%), 
+    url('images/background-image.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content {
+    display: flex;
+}
+aside {
+    padding-right: 3em;
+}
+aside > img {
+    margin: 0.5em;
+}
+hr {
+    border: none;
+    border-left: 0.15rem solid white;
+    height: 20%;
+    margin: 2em
 }
 a, a:visited {
     color:white;
     text-decoration: none;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    width: 30%;
+    line-height: 1.2;
+    margin: 0.67em 0;
+}
+
+.home > p {
+    width: 25%;
+    text-align: justify;
+    margin: 3.34em 0;
+}
+
+button {
+    color: #ffffff;
+    background-color: #08747c;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.4em 1em
+}
+.home > button {
+    font-size: 1rem;
+    padding: 0.7em 2em;
+    font-weight: bold;
 }
