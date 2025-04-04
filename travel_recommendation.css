@@ -1,48 +1,85 @@
-html, body {
+html,
+body {
     margin: 0;
     color: white;
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
+
 .root {
     min-height: 100vh;
-    background: linear-gradient(to right, rgba(0, 56, 58, 0.918), rgba(0, 77, 82, 0) 90%), 
-    url('images/background-image.jpg');
+    background: linear-gradient(to right, rgba(0, 56, 58, 0.918), rgba(0, 77, 82, 0) 90%),
+        url('images/background-image.jpg');
     background-size: cover;
     background-attachment: fixed;
-}
-.content {
     display: flex;
+    flex-direction: column;
 }
+
+.content {
+    overflow: auto;
+    display: flex;
+    flex: 1;
+}
+
 aside {
-    padding-right: 3em;
+    position: fixed;
 }
-aside > img {
+
+aside>a>img {
     margin: 0.5em;
 }
+
 hr {
     border: none;
     border-left: 0.15rem solid white;
-    height: 20%;
-    margin: 2em
+    height: 20vh;
+    margin: 5em 2em
 }
-a, a:visited {
-    color:white;
+
+main {
+    flex: 1;
+    position: relative;
+}
+
+input {
+    outline: none;
+    background: none;
+    box-shadow: none;
+    text-overflow: ellipsis;
+}
+
+a,
+a:visited {
+    color: white;
     text-decoration: none;
 }
 
+a:hover {
+    color: #08747c;
+    transition: color 0.5s ease;
+}
+
+a:hover img {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(95%) saturate(515%) hue-rotate(142deg) brightness(90%) contrast(91%);
+    transition: filter 0.3s ease;
+}
+
+article {
+    margin-left: 10em;
+}
+
 h1 {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 5rem;
-    width: 30%;
+    width: 40%;
     line-height: 1.2;
     margin: 0.67em 0;
 }
 
-.home > p {
-    width: 25%;
-    text-align: justify;
-    margin: 3.34em 0;
+h2 {
+    font-weight: 800;
+    font-size: 4rem;
 }
 
 button {
@@ -52,8 +89,107 @@ button {
     border-radius: 0.3rem;
     padding: 0.4em 1em
 }
-.home > button {
+
+button:hover {
+    background-color: #075e64;
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.96);
+    background-color: #0c99a3;
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+}
+
+.contact-us-content {
+    display: flex;
+    padding-top: 12%;
+    margin-right: 5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1em;
+}
+
+form>input {
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.5rem;
+    border: solid 0.1rem #9b9b9ba8;
     font-size: 1rem;
-    padding: 0.7em 2em;
-    font-weight: bold;
+}
+
+form>input::placeholder {
+    color: #9b9b9ba8;
+}
+
+form>textarea {
+    color: white;
+    padding: 0.5em 1em;
+    border: solid 0.1rem #9b9b9ba8;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    text-overflow: ellipsis;
+}
+
+form>textarea::placeholder {
+    color: #9b9b9ba8;
+}
+
+form>button {
+    padding: 0.7em;
+    font-size: 1rem;
+}
+
+form>* {
+    margin: 0.5em 0;
+}
+
+.recommendations {
+    position: absolute;
+    top: 5em;
+    right: 1em;
+    z-index: 2;
+    width: 35%;
+}
+
+.recommendation {
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8), -5px -5px 15px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.recommendation > div > h3 {
+    margin: 0;
+}
+
+.recommendation > div {
+    padding: 1em;
+}
+
+.recommendation > div > p {
+    color: #0000006e;
+}
+
+.recommendation > div > button {
+    padding: 0.6em 1.5em;
+}
+
+.recommendation > img {
+    width: 100%;
 }

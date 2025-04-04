@@ -1,0 +1,47 @@
+
+.about-us-text {
+    margin-bottom: 3.5em;
+    padding: 0.2em 1em;
+    width:70%
+}
+.about-us-text > p {
+   line-height: 1.4;
+}
+
+.our-team-text {
+    display: flex;
+}
+
+.team-info {
+    padding: 1.2em;
+    margin: 3em;
+    display: flex;
+}
+.blue-block {
+    background-color: #143474;
+    display: flex;
+    padding: 0.2em;
+    border-radius: 0.5rem;
+}
+.blue-block:hover {
+    background-color: #3255a5;
+}
+.person-info {
+    padding-top: 1em;
+    margin-right: 0.8em;
+    line-height: 1.3rem;
+}
+.person-info > span {
+    color: #999a9b;
+}
+.badge {
+    margin: 0.5rem 0;
+    padding: 0.3em 0;
+    background-color: #284484;
+    border-radius: 0.6rem;
+    border: solid 0.1rem #8699a0;
+    text-align: center;
+}
+.badge:hover {
+    background-color: #3255a5;
+}

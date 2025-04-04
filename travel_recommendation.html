@@ -8,7 +8,8 @@
     <title>Travel Recommendation</title>
     <link rel="stylesheet" href="travel_recommendation.css">
     <link rel="stylesheet" href="travel_recommendation_header.css">
-    <link rel="stylesheet" href=travel_recommendation_home.css">
+    <link rel="stylesheet" href="travel_recommendation_home.css">
+    <link rel="stylesheet" href="travel_recommendation_about_us.css">
 </head>
 
 <body>
@@ -19,90 +20,39 @@
                 <span>TravelBloom</span>
             </div>
             <nav>
-                <a href="">Home</a>
-                <a href="">About us</a>
-                <a href="">Contact Us</a>
+                <a class="link" href="home.html">Home</a>
+                <a class="link" href="about_us.html">About us</a>
+                <a class="link" href="contact_us.html">Contact Us</a>
             </nav>
             <div class="search-bar">
                 <input type="text" name="search" id="search" placeholder="Enter a destination or keyword">
-                <img src="" alt="">
-                <button type="submit">Search</button>
-                <button type="reset">Clear</button>
+                <img src="images/magnifier.svg" alt="magnifier">
+                <button onclick="searchClick()">Search</button>
+                <button onclick="clearClick()">Clear</button>
             </div>
         </header>
         <div class="content">
             <aside>
-                <hr/>
-                <img src="images/twitter.svg" alt="twitter logo"></br>
-                <img src="images/facebook.svg" alt="facebook logo"></br>
-                <img src="images/instagram.svg" alt="instagram logo"></br>
-                <img src="images/youtube.svg" alt="youtube logo"></br>
+                <hr />
+                <a href="https://x.com" target="_blank"><img src="images/twitter.svg" alt="twitter logo"></a></br>
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook logo"></a></br>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="instagram logo"></a></br>
+                <a href="https://youtube.com" target="_blank"><img src="images/youtube.svg" alt="youtube logo"></a></br>
             </aside>
             <main>
                 <article class="home">
                     <h1>EXPLORE DREAM DESTINATION</h1>
                     <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes,
-                        while
-                        pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+                        while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+                    </p>
                     <button>BOOK NOW</button>
                 </article>
-                <article class="about-us">
-                    <h1>ABOUT US</h1>
-                    <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent
-                        services/products to our customers. Our mission is to provide the best experience for people
-                        traveling
-                        to different destinations around the world.
-                        Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in
-                        putting
-                        our
-                        customers first and working together to achieve our goals.</p>
-                    <div>
-                        <h2>Our Team</h2>
-                        <div class="team-info">
-                            <img src="" alt="">
-                            <div>
-                                <b>John Doe</b>
-                                John is responsible for...
-                                <div class="badge">CEO</div>
-                            </div>
-                        </div>
-                        <div class="team-info">
-                            <img src="" alt="">
-                            <div>
-                                <b>Celina Thomas</b>
-                                Celina Thomas is responsible for...
-                                <div class="badge">Team Lead</div>
-                            </div>
-                        </div>
-                        <div class="team-info">
-                            <img src="" alt="">
-                            <div>
-                                <b>Mike Tyson</b>
-                                Mike Tyson is responsible for...
-                                <div class="badge">Delivery Head</div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="contact-us">
-                    <div>
-                        <h1>CONCTACT US</h1>
-                        <p>Get in touch...</p>
-                    </div>
-                    <form>
-                        <label for="name">Name</label>
-                        <input type="text" name="" id="" placeholder="Enter your name">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Enter your email">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"
-                            placeholder="Enter your message"></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-                </article>
+
+
             </main>
         </div>
     </div>
+    <script src="travel_recommendation.js"></script>
 </body>
 
 </html>
